@@ -1,0 +1,15 @@
+[submodule "lab3/lib/assimp"]
+	path = lab3/lib/assimp
+	url = https://github.com/assimp/assimp.git
+[submodule "lab3/lib/glad"]
+	path = lab3/lib/glad
+	url = https://github.com/ValtoLibraries/GLAD.git
+[submodule "lab3/lib/glew"]
+	path = lab3/lib/glew
+	url = https://github.com/edoren/glew.git
+[submodule "lab3/lib/glfw"]
+	path = lab3/lib/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "lab3/lib/glm"]
+	path = lab3/lib/glm
+	url = https://github.com/g-truc/glm.git
