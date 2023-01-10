@@ -17,3 +17,10 @@ lab2
 At the same time, it is necessary to take into account that object matrices and displays must be selected directly by the glMatrixMode command and pre-normalized by the glLoadIdentity function.
 ![image](https://user-images.githubusercontent.com/76412011/204274613-3a355279-15a2-4727-8979-b9bb75042e1f.png)
 ![image](https://user-images.githubusercontent.com/76412011/204274714-eee403ec-039b-4559-a1e1-93587d2364a6.png)
+
+
+lab3
+1) Add light sources
+2) Loading and using models
+3) Loading and using textures
+![image](https://user-images.githubusercontent.com/76412011/211675215-7407d17f-52ca-45bf-831c-b913f64e381f.png)
