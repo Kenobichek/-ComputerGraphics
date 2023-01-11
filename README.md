@@ -15,12 +15,23 @@ lab2
 3) Using the gluLookAt command and key processing functions, create a moving camera for the depicted objects. (We move the camera around the center of the scene - full rotation in the horizontal and vertical planes)
 4) Obtain images of objects in orthogonal and perspective projections using the functions glOrtho, glFrustum, gluLookAt (switching between projections is programmed to press the "P" and "O" keys, respectively).
 At the same time, it is necessary to take into account that object matrices and displays must be selected directly by the glMatrixMode command and pre-normalized by the glLoadIdentity function.
+
 ![image](https://user-images.githubusercontent.com/76412011/204274613-3a355279-15a2-4727-8979-b9bb75042e1f.png)
 ![image](https://user-images.githubusercontent.com/76412011/204274714-eee403ec-039b-4559-a1e1-93587d2364a6.png)
 
 
 lab3
-1) Add light sources
-2) Loading and using models
-3) Loading and using textures
+1) Using the gluLookAt command and key processing functions, create a moving camera for the depicted objects. (We move the camera around the center of the scene - full rotation in the horizontal and vertical planes)
+2) Loading and using models and textures
+3) Add a light source by connecting the use of specular maps and the lighting calculation model
+
+I used the Assimp library to import the 3D models.
+Assimp is a very popular library for importing models, which stands for Open Asset Import Library. This library can import many different formats containing models, storing the imported data as a simple hierarchical data structure. When Assimp finishes loading the models, we can get all the data we need from this structure. It doesn't matter what file format we import, the access to the data in the structures does not change, the structure remains the same for all the different file formats.
+A Mesh object contains all relevant data required for rendering: vertex coordinates, normal vector, texture coordinates, faces, and object material information.
+
 ![image](https://user-images.githubusercontent.com/76412011/211675215-7407d17f-52ca-45bf-831c-b913f64e381f.png)
+
+A searchlight was used as a light source, the position and direction of which are constantly updated depending on the position and orientation of the player (flashlight).
+Running the program results in a spotlight that illuminates only those fragments that are directly inside the spotlight cone. It will look something like this:
+
+![image](https://user-images.githubusercontent.com/76412011/211917937-618028a7-5c2d-48ff-86c2-2eddd3f7596e.png)
